@@ -1,0 +1,96 @@
+.contact {
+    .contact__details {
+        padding-top: 2rem;
+        .contact__details-list {
+            display: flex;
+            align-items: center;
+            margin-top: 3rem;
+            .icon {
+                width: 51px;
+                height: 51px;
+                background: #20155f;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    color: var(--color-white);
+                }
+            }
+            .des {
+                margin-left: 1rem;
+                h6 {
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 40px;
+                    color: #20155f;
+                    margin-bottom: 0%;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                margin-top: 2rem !important;
+            }
+        }
+    }
+    .contact__form {
+        border: 1px solid #ededed;
+        box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.04);
+        border-radius: 16px;
+        padding: 2rem;
+        position: relative;
+        z-index: 999;
+        &::before {
+            content: "";
+            background: url("../../assets/images/circle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100%;
+            position: absolute;
+            top: -8%;
+            left: -5%;
+            width: 115px;
+            height: 115px;
+            z-index: -1;
+        }
+
+        .form-floating {
+            position: relative;
+            i {
+                position: absolute;
+                top: 28%;
+                left: 2%;
+                z-index: 999;
+            }
+            input,
+            textarea {
+                border: 1px solid #d6d6d6;
+                border-radius: 15px;
+                padding-left: 2.5rem;
+            }
+            label {
+                margin-left: 1.4rem;
+            }
+            textarea {
+                height: 200px;
+            }
+            .textareaIcon {
+                top: 8% !important;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            padding: 1rem;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .sectionTitle {
+        h6 {
+            font-size: 1.8rem !important;
+        }
+        p {
+            width: 100% !important;
+            text-align: start;
+        }
+    }
+}

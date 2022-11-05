@@ -1,0 +1,122 @@
+.about {
+    .aboutImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about__value {
+        .about__card {
+            height: 100%;
+            padding: 4rem 3rem;
+            text-align: center;
+
+            .icon {
+                width: 80px;
+                height: 80px;
+                background-color: var(--color-orange);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                margin-bottom: 1rem;
+                i {
+                    font-size: 3rem;
+                    color: white;
+                }
+                
+            }
+            h6 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            p {
+                margin-bottom: 0% !important;
+            }
+        }
+        .green-title {
+            color: #0e9e49;
+        }
+        .red-title {
+            color: #c63617;
+        }
+        .blue-title {
+            color: #374253;
+        }
+        .green-bg {
+            background: #e9fff3;
+        }
+        .red-bg {
+            background: #fff6f7;
+        }
+        .blue-bg {
+            background: #f4f7fb;
+        }
+        @media screen and (max-width: 991px) {
+            .about__card {
+                padding: 1rem;
+            }
+        }
+    }
+    .about__ceoMsg {
+        background: #f4f7fb;
+        overflow: hidden;
+        .ceo-img {
+            position: relative;
+            z-index: 99;
+            &::before {
+                content: "";
+                background: url("../../assets/images/big-circle.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0px;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                margin-top: -95px;
+            }
+            .ceo-img_main {
+                margin-left: 100px;
+                width: 501px;
+                height: 572px;
+            }
+            @media screen and (max-width: 1199px) {
+                &::before {
+                    display: none;
+                }
+                .ceo-img_main {
+                    margin-left: 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .ceo__des {
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 35px 0px 0px 35px;
+            .ceo__details {
+                margin-top: 1.2rem;
+                background-color: var(--color-white);
+                .ceo__name {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 31px;
+                }
+                .ceo__desi {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 31px;
+                    margin-bottom: 0%;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                border-radius: 0px;
+                padding: 1rem;
+            }
+        }
+    }
+}

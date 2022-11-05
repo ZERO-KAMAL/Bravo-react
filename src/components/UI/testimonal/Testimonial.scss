@@ -1,0 +1,71 @@
+.testimonial {
+    .testimonialSwiper {
+        .item {
+            text-align: center;
+            padding: 2rem;
+            .item__box {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 15px 34px rgba(0, 0, 0, 0.04);
+                border-radius: 10px;
+                padding: 2.5rem;
+                position: relative;
+                &::before {
+                    content: "";
+                    background: url("../../../assets//images/circle.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    bottom: -8%;
+                    left: -5%;
+                    width: 115px;
+                    height: 115px;
+                }
+                .item-img {
+                    width: 79px;
+                    height: 79px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                .item-desc {
+                    margin-top: 1.4rem;
+                    position: relative;
+                    i {
+                        position: absolute;
+                        font-size: 28px;
+                        left: -15px;
+                        top: -25px;
+                    }
+                }
+                .item-title {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 33px;
+                    color: #111111;
+                }
+                .item-rating {
+                    i {
+                        color: var(--color-gold);
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color-blue-dark);
+    }
+
+    @media screen and (min-width: 991px) {
+        .swiper-button-next {
+            right: -8px;
+            left: auto;
+        }
+        .swiper-button-prev {
+            left: -8px;
+            right: auto;
+        }
+    }
+}
